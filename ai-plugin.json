@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "MyNewsPlugin",
+  "name_for_human": "My Finance News Plugin",
+  "description_for_model": "Pulls latest finance news from RapidAPI Yahoo Finance",
+  "description_for_human": "Gets the newest news about stocks, markets, etc.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://내사이트.com/.well-known/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://내사이트.com/logo.png",
+  "contact_email": "support@me.com",
+  "legal_info_url": "http://me.com/legal"
+}

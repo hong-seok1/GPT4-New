@@ -1,0 +1,27 @@
+openapi: 3.0.0
+info:
+  title: My Finance News Plugin
+  description: Pull latest finance news from RapidAPI
+  version: '1.0'
+servers:
+  - url: "https://yahoo-finance166.p.rapidapi.com"
+paths:
+  /api/news/list-by-symbol:
+    get:
+      summary: Get news for multiple symbols
+      parameters:
+        - in: query
+          name: s
+          required: true
+          description: "Symbols: e.g. AAPL, GOOGL"
+        - in: query
+          name: region
+          required: true
+          description: "region code: US"
+        - in: query
+          name: snippetCount
+          required: false
+          description: "how many news to fetch"
+      responses:
+        '200':
+          description: OK
